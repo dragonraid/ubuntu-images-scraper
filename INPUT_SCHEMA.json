@@ -1,0 +1,85 @@
+{
+  "title": "PuppeteerCrawler Template",
+  "description": "lorem ipsum",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "cloud": {
+      "title": "Cloud",
+      "type": "string",
+      "description": "Filters images for specific cloud provider",
+      "editor": "select",
+      "enum": [
+        "Amazon AWS",
+        "Oracle Cloud Platform",
+        "Joyent",
+        "Google Compute Engine",
+        "Microsoft Azure",
+        "Amazon GovCloud",
+        "Amazon AWS China",
+        "Any"
+      ]
+    },
+    "zone": {
+      "title": "Zone",
+      "description": "Zone ~ group of data-centers",
+      "type": "string",
+      "editor": "textfield",
+      "prefill": "Any",
+      "default": "Any"
+    },
+    "name": {
+      "title": "Name",
+      "description": "Ubuntu friendly name (i.e. focal)",
+      "type": "string",
+      "editor": "textfield",
+      "prefill": "Any",
+      "default": "Any"
+    },
+    "version": {
+      "title": "Version",
+      "description": "Ubuntu version (i.e. 20.04)",
+      "type": "string",
+      "editor": "textfield",
+      "prefill": "Any",
+      "default": "Any"
+    },
+    "arch": {
+      "title": "Architecture",
+      "description": "Processor architecture (i.e. amd64)",
+      "type": "string",
+      "editor": "textfield",
+      "prefill": "Any",
+      "default": "Any"
+    },
+    "instanceType": {
+      "title": "Instance type",
+      "description": "Instance type depending on cloud provider (i.e. hvm-ssd)",
+      "type": "string",
+      "editor": "textfield",
+      "prefill": "Any",
+      "default": "Any"
+    },
+    "release": {
+      "title": "Release",
+      "description": "Ubuntu release (i.e. 20200729)",
+      "type": "string",
+      "editor": "textfield",
+      "prefill": "Any",
+      "default": "Any"
+    },
+    "id": {
+      "title": "ID",
+      "description": "Image ID",
+      "type": "string",
+      "editor": "textfield"
+    },
+    "numberOfResults": {
+      "title": "Number of results",
+      "description": "Number of image description to be fetched.",
+      "type": "integer",
+      "default": 1,
+      "prefill": 1
+    }
+  }
+}
