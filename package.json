@@ -4,7 +4,7 @@
     "description": "This is a boilerplate of an Apify actor.",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/dragonraid/ubuntu-cloud-images-scraper.git"
+        "url": "git+https://github.com/dragonraid/ubuntu-images-scraper.git"
     },
     "dependencies": {
         "apify": "^0.21.0"

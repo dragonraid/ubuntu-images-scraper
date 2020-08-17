@@ -1,14 +1,28 @@
 # Ubuntu image scraper
 
+- [Ubuntu image scraper](#ubuntu-image-scraper)
+  - [Motivation](#motivation)
+  - [Usage](#usage)
+    - [Input and Output](#input-and-output)
+  - [Limitation / Cavetas](#limitation--cavetas)
+  - [Resource consumption](#resource-consumption)
+  - [Versioning](#versioning)
+
 This scraper enables you to retrieve Ubuntu image ID(s) available
-on various public clouds.
+on various public clouds. Ubuntu is a complete Linux operating system,
+freely available with both community and professional support.
+If you want to know more about ubuntu check following [docs](https://help.ubuntu.com/lts/installation-guide/s390x/ch01.html).
 
 ## Motivation
 
 Imagine you have tons of deployments running in public cloud ([AWS](https://aws.amazon.com/),
 [Microsoft Azure](https://azure.microsoft.com/), [Google Cloud](https://cloud.google.com/),..)
 on [Ubuntu](https://ubuntu.com/) as your base operating system. These images needs to be periodically
-for reasons like feature or security updates.
+updated for reasons like:
+
+- new features
+- bug fixes
+- security patches
 
 This scraper saves you time by extracting relevant image IDs for your cloud provider. You can even
 hook some post-processor to it (for example opening Pull-Request to your repository).
@@ -16,8 +30,6 @@ hook some post-processor to it (for example opening Pull-Request to your reposit
 ## Usage
 
 Run as actor on [Apify Platform](https://apify.com).
-
-TODO: CU consumption, resources needed
 
 ### Input and Output
 
@@ -75,6 +87,11 @@ Output:
 ## Limitation / Cavetas
 
 - Maximum number of results is limited to 100 due to source page limitations
+
+## Resource consumption
+
+One run of this actor consumes cca 0.003 CU, with memory size 1024 MB.
+Use of [apify proxy](https://apify.com/proxy) is not required for this actor.
 
 ## Versioning
 

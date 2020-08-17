@@ -7,7 +7,7 @@
     "cloud": {
       "title": "Cloud",
       "type": "string",
-      "description": "Filters images for specific cloud provider",
+      "description": "Filters images for specific cloud provider (i.e. Amazon AWS)",
       "editor": "select",
       "enum": [
         "Amazon AWS",
@@ -18,68 +18,79 @@
         "Amazon GovCloud",
         "Amazon AWS China",
         "Any"
-      ]
+      ],
+      "example": "Amazon AWS"
     },
     "zone": {
       "title": "Zone",
-      "description": "Zone ~ group of data-centers",
+      "description": "Zone ~ group of data-centers (i.e. us-east-1)",
       "type": "string",
       "editor": "textfield",
-      "prefill": "Any",
-      "default": "Any"
+      "prefill": "us-east-1",
+      "default": "us-east-1",
+      "example": "us-east-1"
     },
     "name": {
       "title": "Name",
       "description": "Ubuntu friendly name (i.e. focal)",
       "type": "string",
       "editor": "textfield",
-      "prefill": "Any",
-      "default": "Any"
+      "prefill": "focal",
+      "default": "focal",
+      "example": "focal"
     },
     "version": {
       "title": "Version",
       "description": "Ubuntu version (i.e. 20.04)",
       "type": "string",
       "editor": "textfield",
-      "prefill": "Any",
-      "default": "Any"
+      "prefill": "20.04",
+      "default": "20.04",
+      "example": "20.04"
     },
     "arch": {
       "title": "Architecture",
       "description": "Processor architecture (i.e. amd64)",
       "type": "string",
       "editor": "textfield",
-      "prefill": "Any",
-      "default": "Any"
+      "prefill": "amd64",
+      "default": "amd64",
+      "example": "amd64"
     },
     "instanceType": {
       "title": "Instance type",
       "description": "Instance type depending on cloud provider (i.e. hvm-ssd)",
       "type": "string",
       "editor": "textfield",
-      "prefill": "Any",
-      "default": "Any"
+      "prefill": "hvm-ssd",
+      "default": "hvm-ssd",
+      "example": "hvm-ssd"
     },
     "release": {
       "title": "Release",
-      "description": "Ubuntu release (i.e. 20200729)",
+      "description": "Ubuntu release (i.e. 20200729). Keep any to get latest",
       "type": "string",
       "editor": "textfield",
       "prefill": "Any",
-      "default": "Any"
+      "default": "Any",
+      "example": "Any"
     },
     "id": {
       "title": "ID",
-      "description": "Image ID",
+      "description": "Image ID. Keep any for most cases.",
       "type": "string",
-      "editor": "textfield"
+      "editor": "textfield",
+      "prefill": "Any",
+      "default": "Any",
+      "example": "Any"
     },
     "numberOfResults": {
       "title": "Number of results",
-      "description": "Number of image description to be fetched.",
+      "description": "Number of images to be fetched. (sorted from latest to oldest)",
       "type": "integer",
       "default": 1,
-      "prefill": 1
+      "prefill": 1,
+      "example": 1
     }
   }
 }
