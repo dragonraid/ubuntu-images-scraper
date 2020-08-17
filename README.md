@@ -5,7 +5,6 @@
   - [Usage](#usage)
     - [Input and Output](#input-and-output)
   - [Limitation / Cavetas](#limitation--cavetas)
-  - [Resource consumption](#resource-consumption)
   - [Versioning](#versioning)
 
 This scraper enables you to retrieve Ubuntu image ID(s) available
@@ -29,7 +28,8 @@ hook some post-processor to it (for example opening Pull-Request to your reposit
 
 ## Usage
 
-Run as actor on [Apify Platform](https://apify.com).
+Run as actor on [Apify Platform](https://apify.com). One run of this actor consumes cca 0.003 CU, with memory size 1024 MB.
+Use of [apify proxy](https://apify.com/proxy) is not required for this actor.
 
 ### Input and Output
 
@@ -87,11 +87,6 @@ Output:
 ## Limitation / Cavetas
 
 - Maximum number of results is limited to 100 due to source page limitations
-
-## Resource consumption
-
-One run of this actor consumes cca 0.003 CU, with memory size 1024 MB.
-Use of [apify proxy](https://apify.com/proxy) is not required for this actor.
 
 ## Versioning
 
