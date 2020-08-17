@@ -1,6 +1,6 @@
-# Ubuntu image scraper
+# Ubuntu images scraper
 
-- [Ubuntu image scraper](#ubuntu-image-scraper)
+- [Ubuntu images scraper](#ubuntu-images-scraper)
   - [Motivation](#motivation)
   - [Usage](#usage)
     - [Input and Output](#input-and-output)
