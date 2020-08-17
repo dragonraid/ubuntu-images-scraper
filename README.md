@@ -11,7 +11,7 @@
 This scraper enables you to retrieve Ubuntu image ID(s) available
 on various public clouds. Ubuntu is a complete Linux operating system,
 freely available with both community and professional support.
-If you want to know more about ubuntu check following [docs](https://help.ubuntu.com/lts/installation-guide/s390x/ch01.html).
+If you want to know more about ubuntu, check following [docs](https://help.ubuntu.com/lts/installation-guide/s390x/ch01.html).
 
 ## Motivation
 
