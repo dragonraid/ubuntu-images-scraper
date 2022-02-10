@@ -1,0 +1,28 @@
+{
+    "actorSpecification": 1,
+    "description": "Text that is shown in the Output UI",
+    "properties": {
+        "currentProducts": {
+            "title": "current products",
+            "type": "dataset",
+            "views": [
+                "productVariants"
+            ]
+        },
+        "productImages": {
+            "title": "Product images",
+            "type": "key-value-store",
+            "description": "Yaddada",
+            "collections": [
+                "screenshots"
+            ]
+        },
+        "summaryReportView": {
+            "title": "API server",
+            "type": "key-value-store",
+            "collections": [
+                "monitoringReport"
+            ]
+        }
+    }
+}

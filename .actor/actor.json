@@ -1,0 +1,21 @@
+{
+    "actorSpecification": 1,
+    "name": "google-search-scraper",
+    "title": "Google Search Scraper",
+    "description": "The 200-char description",
+    "version": "3000.1.0",
+    "buildTag": "latest",
+    "environmentVariables": {
+        "MYSQL_USER": "my_username",
+        "MYSQL_PASSWORD": "@mySecretPassword"
+    },
+    "dockerfile": "./Dockerfile",
+    "readme": "./ACTOR.md",
+    "input": "./input_schema.json",
+    "output": "./output_schema.json",
+    "storages": {
+        "keyValueStore": "./key_value_store_schema.json",
+        "dataset": "./dataset_schema.json",
+        "requestQueue": "./request_queue_schema.json"
+    }
+}

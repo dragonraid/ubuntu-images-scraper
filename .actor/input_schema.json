@@ -1,0 +1,53 @@
+{
+    "schemaType": "InputSchema",
+    "schemaVersion": 2,
+    "type": "object",
+    "description": "How to stress platform",
+    "properties": {
+        "type": {
+            "title": "Type of stress",
+            "type": "string",
+            "description": "CPU, Network, Network via Proxy, Network via API",
+            "editor": "select",
+            "default": "cpu",
+            "enum": ["cpu", "networkIO", "networkIOWithProxy", "diskIO", "keyValueStore"],
+            "enumTitles": ["CPU", "Network", "Network via Proxy", "Disk Write/Read", "KeyValueStore Write"]
+        },
+        "fibonacciTerm": {
+            "title": "Fibonacci term",
+            "type": "integer",
+            "description": "Give Fibonacci term to determine how much to stress cpu",
+            "editor": "number",
+            "default": 50
+        },
+        "fileName": {
+            "title": "File name",
+            "type": "string",
+            "description": "File name, where to store buffer",
+            "editor": "textfield",
+            "default": "file.bin"
+        },
+        "remoteFileUrl": {
+            "title": "URL",
+            "type": "string",
+            "description": "Remote file to download",
+            "editor": "textfield",
+            "default": "https://mirrors.edge.kernel.org/pub/linux/kernel/v5.x/linux-5.0.1.tar.xz"
+        },
+        "sizeInMb": {
+            "title": "Buffer size in MB",
+            "type": "integer",
+            "description": "Buffer size that will stored in disk or KV-store",
+            "editor": "number",
+            "default": 100
+        },
+        "proxyUsername": {
+            "title": "Proxy username",
+            "type": "string",
+            "description": "Proxy username",
+            "editor": "textfield",
+            "default": "auto"
+        }
+    },
+    "required": ["type"]
+}

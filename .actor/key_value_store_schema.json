@@ -1,0 +1,20 @@
+{
+    "actorSpecification": 1,
+    "type": "object",
+    "description": "How to stress platform",
+    "name": "Data",
+    "collections": {
+        "postImages": {
+            "name": "Post images",
+            "description": "Contains all Instagram post images",
+            "keyPrefix": "post-image-",
+            "contentTypes": ["image/jpeg", "image/png"]
+        },
+
+        "profilePicture": {
+            "name": "Profile picture",
+            "key": "profile-picture",
+            "contentTypes": ["image/*"]
+        }
+    }
+}

@@ -1,0 +1,53 @@
+{
+    "actorSpecification": 1,
+
+    "description": "Dataset containing the whole product catalog including prices and stock availability.",
+    "fields": {
+        "title": "string",
+        "priceUsd": "number",
+        "manufacturer": {
+            "title": "string",
+            "url": "number"
+        },
+        "productVariants": [{
+            "color": "?string"
+        }]
+    },
+    "views": {
+        "overview": {
+            "name": "Products overview",
+            "description": "Displays only basic fields such as title and price",
+            "transformation": {
+                "fields": [
+                    "title",
+                    "priceUsd"
+                ]
+            },
+            "display": {
+                "component": "grid",
+                "options": { "width": 6 },
+                "properties": {
+                    "title": "$title",
+                    "description": "${price} USD",
+                    "pictureUrl": "$picture"
+                }
+            }
+        },
+        "productVariants": {
+            "name": "Product variants",
+            "description": "Each product expanded into item per variant",
+            "transformation": {
+                "fields": [
+                    "title",
+                    "price",
+                    "productVariants"
+                ],
+                "unwind": ["productVariants"]
+
+            },
+            "display": {
+                "component": "table"
+            }
+        }
+    }
+}
