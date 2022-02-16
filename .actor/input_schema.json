@@ -1,6 +1,6 @@
 {
     "schemaType": "InputSchema",
-    "schemaVersion": 2,
+    "schemaVersion": 1,
     "type": "object",
     "description": "How to stress platform",
     "properties": {
